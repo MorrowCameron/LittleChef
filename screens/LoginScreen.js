@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Button from '../components/button';
 import Textbox from '../components/textbox';
 import { StatusBar } from 'expo-status-bar';
 import { RED } from "@env";
 
-export default function HomeScreen({navigation}) {
+export default function LoginScreen({navigation}) {
     return (
       <LinearGradient
         colors = { ['#F4DDFF','#FFCFAE'] }
@@ -28,7 +28,7 @@ export default function HomeScreen({navigation}) {
                     <Textbox style={[styles.textbox, styles.dropShadow]} placeholder="Enter Password..." />
                 </View>
                 <View style={{flex: 0.5}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={(() => Alert.alert("Dang, that sucks"))}>
                         <Text style={{color: "blue", textDecorationLine: 'underline'}}>Forgot Password?</Text>
                     </TouchableOpacity>
                 </View>
@@ -46,7 +46,7 @@ export default function HomeScreen({navigation}) {
                     </View>
                     <View style={{flex: 1, width: "80%", alignSelf: "center"}}>
                         <Button 
-                            onPress={()=>{navigation.navigate('Home')}}
+                            onPress={()=>{navigation.navigate('CreateAccount')}}
                             title="Create Account"
                             textStyle={{textAlign: 'center'}}
                             />
