@@ -1,46 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import Button from './components/button';
-
+import HomeScreen from './screens/HomeScreen';
+import Login from './screens/LoginScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-function HomeScreen() {
-  return (
-    <LinearGradient
-      colors = { ['#F4DDFF','#FFCFAE'] }
-      start = { { x: 0, y: 0 } }
-      end = { { x: 0, y: 1 } }
-      style = { styles.container }
-    >
-        <Text>Hello World!</Text>
-        <StatusBar style="auto" />
-        <Button 
-          onPress={()=>{}}
-          title="Press Me"
-           />
-    </LinearGradient>
-  );
-}
+import { useFonts } from 'expo-font';
 
 const Stack = createNativeStackNavigator();
 
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Lemonada': require('./assets/fonts/Lemonada.ttf'),
+    'Lemonada-SemiBold' : require('./assets/fonts/Lemonada-SemiBold.ttf')
+  });
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

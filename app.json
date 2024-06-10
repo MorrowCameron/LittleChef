@@ -11,6 +11,14 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins" :[
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Lemonada.ttf", "./assets/fonts/Lemonada-SemiBold.ttf"]
+        }
+      ]
+    ] ,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.LittleChef"

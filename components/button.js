@@ -16,18 +16,20 @@ const styles = StyleSheet.create({
     button: {
         backgroundColor: RED,
         paddingVertical: 10,
-        paddingHorizontal: 10,
+        paddingHorizontal: "15%",
         borderRadius: 35,
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        width: "50%",
-        height: 50
+        textAlign: "center",
+        height: 50,
+        display: "flex"
     },
     buttonText: {
         color: "white",
         fontFamily: "Baskerville",
-        fontSize: 20
+        fontSize: 20,
+        textAlign: "center"
     }
 })
 
