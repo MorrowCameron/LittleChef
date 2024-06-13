@@ -17,6 +17,14 @@
         {
           "fonts": ["./assets/fonts/Lemonada.ttf", "./assets/fonts/Lemonada-SemiBold.ttf"]
         }
+      ],
+      [
+        "expo-camera",
+          {
+            "cameraPermission": "Allow LittleChef to access your camera.",
+            "microphonePermission": "Allow LittleChef to access your microphone",
+            "recordAudioAndroid": true
+          }
       ]
     ] ,
     "ios": {

@@ -1,5 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import {Dimensions} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Button from '../components/button';
 import Textbox from '../components/textbox';
