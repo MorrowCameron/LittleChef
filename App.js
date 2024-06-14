@@ -4,6 +4,9 @@ import CreateAccount from './screens/CreateAccount';
 import Archive from './screens/Archive';
 import Profile from './screens/Profile';
 import Scanner from './screens/Scanner';
+import Generator from './screens/Generator';
+import Generator2 from './screens/Generator2';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts } from 'expo-font';
@@ -25,6 +28,8 @@ export default function App() {
         <Stack.Screen name="Archive" component={Archive} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Scanner" component={Scanner} />
+        <Stack.Screen name="Generator" component={Generator} />
+        <Stack.Screen name="Generator2" component={Generator2} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -35,7 +35,7 @@ export default function CreateAccount({navigation}) {
                 </View>
                 <View style={{flex: 2, top: "15%"}}>
                     <Button 
-                        onPress={()=>{navigation.navigate('Home')}}
+                        onPress={()=>{navigation.navigate('Home', {ingredients : []})}}
                         title="Create Account"
                         textStyle={{textAlign: 'center'}}
                         />

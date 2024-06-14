@@ -34,7 +34,7 @@ export default function LoginScreen({navigation}) {
                 </View>
                 <View style={{flex: 1}}>
                     <Button 
-                        onPress={()=>{navigation.navigate('Home')}}
+                        onPress={()=>{navigation.navigate('Home', {ingredients : []})}}
                         title="Log In"
                         textStyle={{textAlign: 'center'}}
                         />

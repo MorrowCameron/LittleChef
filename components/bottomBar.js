@@ -23,7 +23,7 @@ const BottomBar = props => {
                     <Image source={require('../assets/images/HomeSelected.png')} style={{width: 70, height:80, color: "red"}}></Image>    
                 </TouchableOpacity>
                 :
-                <TouchableOpacity style={{flex: 1, alignItems: 'center'}} onPress={() => props.navigator.navigate("Home")}>
+                <TouchableOpacity style={{flex: 1, alignItems: 'center'}} onPress={() => props.navigator.navigate("Home", {ingredients : []})}>
                     <Image source={require('../assets/images/Home.png')} style={{width: 70, height:80, color: "red"}}></Image>    
                 </TouchableOpacity>
             }
