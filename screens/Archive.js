@@ -18,8 +18,8 @@ export default function Archive({navigation}) {
                             <Text style={{fontFamily: "Lemonada-SemiBold", fontSize: 30, textAlign: "left"}}>Archive:</Text>
                         </View>
                         <ScrollView style={{flex: 1, flexDirection: "column", height: Dimensions.get('window').height * 0.4}}> 
-                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Pad Thai"></Card>
-                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Hamburger Patee"></Card>
+                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Pad Thai" onPress={() => navigation.navigate("Recipe")}></Card>
+                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Hamburger Patee" onPress={() => navigation.navigate("Recipe")}></Card>
                         </ScrollView>
                         
                     </View>                    
@@ -28,8 +28,8 @@ export default function Archive({navigation}) {
                             <Text style={{fontFamily: "Lemonada-SemiBold", fontSize: 30, textAlign: "left"}}>Favorite:</Text>
                         </View>   
                         <ScrollView style={{flex: 1, flexDirection: "column", height: Dimensions.get('window').height * 0.4}}> 
-                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Fried Rice"></Card>
-                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Miso Soup"></Card>
+                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Fried Rice" onPress={() => navigation.navigate("Recipe")}></Card>
+                            <Card style={{flex: 1, alignSelf: "center", margin: 10}} Name="Miso Soup" onPress={() => navigation.navigate("Recipe")}></Card>
                         </ScrollView>
                     </View>
                 </View>
