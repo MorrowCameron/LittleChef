@@ -5,7 +5,7 @@ import Heart from './heart'
 const Card = props => {
     color = "Green"
     return(
-        <TouchableOpacity>
+        <TouchableOpacity onPress={props.onPress}>
             <View style={[{width: "100%", backgroundColor: "#FBEFF7", borderRadius: 5, paddingVertical: 3, margin: 10, height: 100}, props.style, styles.dropShadow]}>
                 <View style={{flex: 2, flexDirection: "row"}}> 
                     <Text style={{flex:9, marginLeft: 10, fontFamily: "Lemonada-SemiBold", fontSize: 28}}> {props.Name} </Text>

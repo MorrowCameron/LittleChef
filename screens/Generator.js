@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import IngredientObj from '../components/Ingredient';
 import Button from "../components/button";
+import BottomBar from '../components/bottomBar';
 
 export default function Generator({navigation}) {
     return (
@@ -20,16 +21,16 @@ export default function Generator({navigation}) {
                     start = {{ x: 0, y: 0 }}
                     end = {{ x: 0, y: 1 }}
                     style={[styles.container, {width: "100%", margin: "10%", borderRadius: 10, alignSelf: "center"}]}>
-                        <View style={[{flex: 0.5,backgroundColor: "white", padding: 5, borderRadius: 10, marginTop: 10, right: "10%"}, styles.dropShadow]}>
+                        <View style={[{flex: 0.5,backgroundColor: "white", padding: 5, borderRadius: 10, marginTop: 10, right: "2%"}, styles.dropShadow]}>
                             <Text>Do you have these items?</Text>
                         </View>
                         <View style={[{flex: 1, borderRadius: 60, backgroundColor: "white", padding: 10, width: 60, height: 60, left: "-35%", top: "-2%"}, styles.dropShadow]}>
                             <Image source={require("../assets/images/hat.png")} style={{height: 40, width: 40}}></Image>
                         </View>
-                        <View style={{flex: 10, width: "90%"}}>
+                        <View style={{flex: 6, width: "90%"}}>
                             <IngredientObj ingredient={"Paprika"} count={1} style={{top: -20}}></IngredientObj>
-                            <IngredientObj ingredient={"Salt"} count={1} style={{top: -100}}></IngredientObj>
-                            <IngredientObj ingredient={"Pepper"} count={1} style={{top: -180}}></IngredientObj>
+                            <IngredientObj ingredient={"Salt"} count={1} style={{top: -60}}></IngredientObj>
+                            <IngredientObj ingredient={"Pepper"} count={1} style={{top: -100}}></IngredientObj>
                     
                         </View>
                         <View style={{flex: 3}}>
@@ -38,7 +39,7 @@ export default function Generator({navigation}) {
                     <StatusBar style="auto" />
                 </LinearGradient>
             </View>
-            
+            <BottomBar style={{flex: 1}} navigator={navigation}></BottomBar>
         </LinearGradient>
         </View>
     )

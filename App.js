@@ -6,6 +6,9 @@ import Profile from './screens/Profile';
 import Scanner from './screens/Scanner';
 import Generator from './screens/Generator';
 import Generator2 from './screens/Generator2';
+import Generator3 from './screens/Generator3';
+import Recipe from './screens/Recipe';
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -30,6 +33,8 @@ export default function App() {
         <Stack.Screen name="Scanner" component={Scanner} />
         <Stack.Screen name="Generator" component={Generator} />
         <Stack.Screen name="Generator2" component={Generator2} />
+        <Stack.Screen name="Generator3" component={Generator3} />
+        <Stack.Screen name="Recipe" component={Recipe} />
       </Stack.Navigator>
     </NavigationContainer>
   );
